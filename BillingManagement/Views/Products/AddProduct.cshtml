@@ -1,0 +1,17 @@
+﻿@model Ekart.Models.Products
+@{
+    ViewData["Title"] = "Product to be add";
+}
+<div>
+    <h4>ID: @Model.ProductId</h4>
+    <h4>Name: @Model.Name</h4>
+    <h4>Description: @Model.Description</h4>
+    <h4>Price: @Model.Price</h4>
+    <h4>Quantity In Stock: @Model.QuantityInStock</h4>
+    <h4>Category ID: @Model.CategoryId</h4>
+    <h4>Image:</h4>
+    <img src="@Model.imageUrl" alt="@Model.Name" style="max-width: 200px; max-height: 200px;" />
+    <h4>Discount: @Model.Discount</h4>
+    <h4>Warranty: @Model.Warrenty</h4>
+</div>
+

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Ekart.Models.Products>
+@{
+    ViewData["Title"] = "All Products";
+}
+
+<h1>All Products</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity In Stock</th>
+            <th>Category ID</th>
+            <th>Image</th>
+            <th>Discount</th>
+            <th>Warranty</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.ProductId</td>
+                <td>@product.Name</td>
+                <td>@product.Description</td>
+                <td>@product.Price</td>
+                <td>@product.QuantityInStock</td>
+                <td>@product.CategoryId</td>
+                <td><img src="@product.imageUrl" alt="@product.Name" style="max-width: 100px; max-height: 100px;" /></td>
+                <td>@product.Discount</td>
+                <td>@product.Warrenty</td>
+            </tr>
+        }
+    </tbody>
+</table>
