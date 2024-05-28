@@ -17,6 +17,8 @@
             <th>Image</th>
             <th>Discount</th>
             <th>Warranty</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
     </thead>
     <tbody>
@@ -32,7 +34,20 @@
                 <td><img src="@product.imageUrl" alt="@product.Name" style="max-width: 100px; max-height: 100px;" /></td>
                 <td>@product.Discount</td>
                 <td>@product.Warrenty</td>
+                <td>
+                    <a href="/Products/UpdateProduct/@product.ProductId" class="btn btn-primary">Edit</a>
+
+                </td>
+                <td>
+                    <a href="/Products/DeleteProduct/@product.ProductId" class="btn-btn-danger">Delete</a>
+                </td>
             </tr>
         }
     </tbody>
+
 </table>
+
+<div>
+    <a href="/Products/AddItem" class="btn btn-primary">Add Item</a>
+
+</div>

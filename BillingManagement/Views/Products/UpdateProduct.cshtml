@@ -1,0 +1,44 @@
+﻿@model Ekart.Models.Products
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+
+<h1>Edit Product</h1>
+<form method="post" action="/Products/UpdateProduct">
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity In Stock</th>
+            <th>Category ID</th>
+            <th>Image</th>
+            <th>Discount</th>
+            <th>Warranty</th>
+            <th>Save</th>
+        </tr>
+    </thead>
+    <tbody>
+       
+            <tr>
+                <td>@Html.EditorFor(model => model.ProductId)</td>
+            <td>@Html.EditorFor(model => model.Name)</td>
+            <td>@Html.EditorFor(model => model.Description)</td>
+            <td>@Html.EditorFor(model => model.Price)</td>
+            <td>@Html.EditorFor(model => model.QuantityInStock)</td>
+            <td>@Html.EditorFor(model => model.CategoryId)</td>
+            <td>@Html.EditorFor(model => model.imageUrl)</td>
+            <td>@Html.EditorFor(model => model.Discount)</td>
+            <td>@Html.EditorFor(model => model.Warrenty)</td>
+            </tr>
+        
+    </tbody>
+
+</table>
+    <button type="submit" class="btn btn-primary">Update</button>
+
+</form>
+

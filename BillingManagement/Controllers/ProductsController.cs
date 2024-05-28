@@ -2,6 +2,7 @@
 using Ekart.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Ekart.Controllers
@@ -18,7 +19,21 @@ namespace Ekart.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            var allProducts = _productService.GetAllProducts();
+            IEnumerable<Products> allProducts = _productService.GetAllProducts();
+             var newProduct = new Products
+            {
+                ProductId = 1,
+                Name = "book",
+                Description = "Spritual Book",
+                Price = 123.00m,
+                QuantityInStock = 10,
+                CategoryId = 1,
+                imageUrl = "https://wisdomtreeindia.com/images/product/Yogic-Secrets-of-the-Dark-Goddess.jpg",
+                Discount = 0,
+                Warrenty = 1
+            };
+            List<Products> productList = allProducts.ToList();
+            productList.Add(newProduct);
             return View(allProducts);
         }
 
@@ -29,14 +44,14 @@ namespace Ekart.Controllers
             return View(product);
         }
 
-        //[HttpGet]
-        //public IActionResult AddProduct()
-        //{    
-        //    return View();
-        //}
+        [HttpGet]
+        public IActionResult AddItem()
+        {
+            return View();
+        }
 
         [HttpPost]
-        public IActionResult AddProduct(Products product)
+        public IActionResult AddItem(Products product)
         {
             if (ModelState.IsValid)
             {

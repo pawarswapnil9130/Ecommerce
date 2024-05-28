@@ -5,7 +5,7 @@ namespace Ekart.Services
 {
     public class ProductService
     {
-        private readonly EkartDbContext _ekartDb;
+        private  EkartDbContext _ekartDb;
 
         public ProductService(EkartDbContext ekartDbContext)
         {
@@ -20,15 +20,16 @@ namespace Ekart.Services
         }
 
 
-        public IQueryable<Products> GetAllProducts()
+        public IEnumerable<Products> GetAllProducts()
         {
-            return _ekartDb.Products;
+            return _ekartDb.Products.ToList();  
         }
 
 
         public Products GetProductById(int productId)
         {
-            return _ekartDb.Products.FirstOrDefault(p => p.ProductId == productId);
+           return  _ekartDb.Products.FirstOrDefault();
+           // return _ekartDb.Products.FirstOrDefault(p => p.ProductId == productId);
         }
 
 

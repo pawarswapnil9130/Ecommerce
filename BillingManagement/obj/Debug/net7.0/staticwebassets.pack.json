@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Admin\\Desktop\\DotNet\\Practice\\BillingManagement\\BillingManagement\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BillingManagement.bundle.scp.css",
-      "PackagePath": "staticwebassets\\BillingManagement.bundle.scp.css"
+      "Id": "C:\\Users\\Admin\\Desktop\\DotNet\\Practice\\BillingManagement\\BillingManagement\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Ekart.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Ekart.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\DotNet\\Practice\\BillingManagement\\BillingManagement\\wwwroot\\css\\site.css",
@@ -245,20 +245,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BillingManagement.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Ekart.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.BillingManagement.props",
-      "PackagePath": "build\\BillingManagement.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Ekart.props",
+      "PackagePath": "build\\Ekart.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.BillingManagement.props",
-      "PackagePath": "buildMultiTargeting\\BillingManagement.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Ekart.props",
+      "PackagePath": "buildMultiTargeting\\Ekart.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.BillingManagement.props",
-      "PackagePath": "buildTransitive\\BillingManagement.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Ekart.props",
+      "PackagePath": "buildTransitive\\Ekart.props"
     }
   ],
   "ElementsToRemove": []
